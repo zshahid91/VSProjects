@@ -3,5 +3,9 @@
         "iterator": "cpp",
         "xutility": "cpp",
         "iostream": "cpp"
-    }
+    },
+
+    "files.exclude": {
+        "**/.git": false
+   }
 }
