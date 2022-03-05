@@ -19,5 +19,6 @@ int main(){
 
     cout << endl <<"Final total = " << total;
 
+
     return 0;
 }
