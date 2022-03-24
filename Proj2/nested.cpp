@@ -5,27 +5,35 @@
 using namespace std;
 
 int main(){
-    int count = 0, count2 = 0;
+    int i = 0, j= 0;
 
-    for(count = 0;count <= 4;count++){
+    for(i = 0;i <= 4;i++){
         
-        for(count2 = 0;count2 <= 2;count2++){
+        for(j = 0;j <= i;j++){
             cout << "*";
         }
         cout << endl;
     }
 
-    count = count2 = 0;
-
-    while(count <= 4){
-        while(count2 <= 2){
+    for(i = 4;i >= 0;i--){
+        
+        for(j = 0;j <= i;j++){
             cout << "*";
-            count2++;
         }
-
         cout << endl;
-        count2 = 0;
-        count++;
     }
+
+    // count = count2 = 0;
+
+    // while(count <= 4){
+    //     while(count2 <= 2){
+    //         cout << "*";
+    //         count2++;
+    //     }
+
+    //     cout << endl;
+    //     count2 = 0;
+    //     count++;
+    // }
     return 0;
 }
