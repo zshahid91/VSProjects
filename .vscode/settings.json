@@ -3,7 +3,8 @@
         "iostream": "cpp",
         "iterator": "cpp",
         "xutility": "cpp",
-        "xstring": "cpp"
+        "xstring": "cpp",
+        "ostream": "cpp"
     },
 
     "files.exclude": {
