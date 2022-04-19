@@ -1,1 +1,1 @@
-cout << things[0][1];
+i]

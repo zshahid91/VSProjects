@@ -6,10 +6,22 @@ using namespace std;
 
 // Function Definition
 // Default Arguments
+// User-Defined Functions
 
 float add_nums(float num1 = 0, float num2 = 0){
     float sum = num1 + num2;
     return sum;
+}
+
+// Passing arrays to a function
+
+float mul_nums(float mul_array[3]){
+    float product = 1;
+    for(int i = 0;i <= 2;i++){
+        product *= mul_array[i];
+    }
+    
+    return product;
 }
 
 void age_printer(int age){
@@ -40,6 +52,9 @@ int main(){
     cout << add_nums() << endl;
     name_printer();
     name_printer("Huzaifa");
+
+    float mul_array[3] = {2, 4, 4};
+    cout << mul_nums(mul_array);
     
     return 0;
 }
