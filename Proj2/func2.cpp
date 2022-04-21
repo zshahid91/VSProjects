@@ -29,7 +29,7 @@ int main(){
   cout << &a2 << endl;
   cout << &some_var << endl;
 
-  cout << "After: a1 = " << a1 << ", a2 = " << a2 << "\n";
+  cout << "After: a1 = " << a1<< ", a2 = " << a2 << "\n";
 
   string food = "ghia tori";
   string &meal = food; // Reference Variable
