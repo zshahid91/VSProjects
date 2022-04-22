@@ -49,7 +49,7 @@ int main(){
     age_printer(10);
     cout << endl;
 
-    cout << add_nums() << endl;
+    cout << add_nums() << endl; // Empty Function
     name_printer();
     name_printer("Huzaifa");
 
