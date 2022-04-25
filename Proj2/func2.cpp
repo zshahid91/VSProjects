@@ -31,7 +31,7 @@ int main(){
 
   cout << "After: a1 = " << a1<< ", a2 = " << a2 << "\n";
 
-  string food = "ghia tori";
+  string food = "pizza";
   string &meal = food; // Reference Variable
 
   cout << meal << " " << food << endl;

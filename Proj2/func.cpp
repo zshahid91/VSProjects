@@ -9,8 +9,7 @@ using namespace std;
 // User-Defined Functions
 
 float add_nums(float num1 = 0, float num2 = 0){
-    float sum = num1 + num2;
-    return sum;
+    return (num1 + num2);
 }
 
 // Passing arrays to a function
