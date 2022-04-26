@@ -4,17 +4,25 @@
 
 using namespace std;
 
+int some_var = 4; // Global Variable
+
 void by_value(int x) { // Actual Parameter
   x *= 2;
   cout << &x;
+  cout << "\nChanged value = " << (some_var + 4);
 }
 
 void by_reference(int &y) { // Formal Parameter
-  y *= 2;
+  y *= 2; // Local Variable
   cout << &y;
 }
 
-int some_var = 4; //Global Variable
+float factorial(int x){
+  if (x == 0)
+    return 1;
+  else
+    return x * factorial(x-1);
+}
 
 int main(){
 
@@ -41,7 +49,9 @@ int main(){
   int &j = i;
   int k = i;
 
-  cout << i << " " << &i << " " << &j << " " << &k;
+  cout << i << " " << &i << " " << &j << " " << &k << endl;
+
+  cout << "\nFactorial of 5 = " << factorial(5);
 
     return 0;
 }
