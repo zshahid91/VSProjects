@@ -18,10 +18,11 @@ void by_reference(int &y) { // Formal Parameter
 }
 
 float factorial(int x){
-  if (x == 0)
+  if(x == 0){
     return 1;
-  else
-    return x * factorial(x-1);
+  }
+
+  return x * factorial(x-1);
 }
 
 int main(){
@@ -51,7 +52,10 @@ int main(){
 
   cout << i << " " << &i << " " << &j << " " << &k << endl;
 
-  cout << "\nFactorial of 5 = " << factorial(5);
+  int num = 1;
+  cout << "Enter the number whose factorial is needed = " << endl;
+  cin >> num;
+  cout << "Factorial of " << num << " is " << factorial(num) << endl;
 
     return 0;
 }

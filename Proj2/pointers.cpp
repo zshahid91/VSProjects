@@ -5,7 +5,7 @@
 using namespace std;
 
 int main(){
-    string food = "pizza";
+    string food = "anday waala burger";
     int age = 22;
 
     cout << food << endl;
@@ -13,12 +13,20 @@ int main(){
     cout << &food << endl;
 
     string* ptr = &food;
+    string** ptr2 = &ptr;
+    string*** ptr3 = &ptr2;
+    
     int *age_ptr = &age;
     int** age_ptr2 = &age_ptr; // Pointer-to-pointer
     // string * ptr = &food;
     // string *ptr = &food;
 
     cout << *ptr << "    " << age_ptr <<"   " << age_ptr2 << endl;
+
+    *ptr = "Cheese Burger";
+    **ptr2 = "chicken sandwich";
+
+    cout << food << "   " << **age_ptr2 << "    " << **ptr2 << endl;
 
     return 0;
 }
