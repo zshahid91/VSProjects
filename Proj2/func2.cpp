@@ -17,12 +17,11 @@ void by_reference(int &y) { // Formal Parameter
   cout << &y;
 }
 
-float factorial(int x){
-  if(x == 0){
+float factorial(int x) {
+  if (x == 0) {
     return 1;
   }
-
-  return x * factorial(x-1);
+  return x * factorial(x - 1);
 }
 
 int main(){
@@ -52,9 +51,10 @@ int main(){
 
   cout << i << " " << &i << " " << &j << " " << &k << endl;
 
-  int num = 1;
-  cout << "Enter the number whose factorial is needed = " << endl;
+  int num = 0;
+  cout << "Enter the number: " << endl;
   cin >> num;
+
   cout << "Factorial of " << num << " is " << factorial(num) << endl;
 
     return 0;

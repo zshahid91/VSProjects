@@ -12,7 +12,7 @@ int main(){
 
     cout << &food << endl;
 
-    string* ptr = &food;
+    string* ptr = &food; // Recommended method
     string** ptr2 = &ptr;
     string*** ptr3 = &ptr2;
     
@@ -21,7 +21,8 @@ int main(){
     // string * ptr = &food;
     // string *ptr = &food;
 
-    cout << *ptr << "    " << age_ptr <<"   " << age_ptr2 << endl;
+    // Dereference Operator
+    cout << *ptr << "    " << **ptr2 << "     " << age_ptr << "   " << age_ptr2 << endl;
 
     *ptr = "Cheese Burger";
     **ptr2 = "chicken sandwich";
