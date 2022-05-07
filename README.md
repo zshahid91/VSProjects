@@ -1,2 +1,3 @@
-# Teaching Programming Fundamentals to the students of BS Computer Science
-**Putting all concepts, related to Programming Fundamentals, here for the greater good.**
+# Teaching Programming Fundamentals-C++
+## Teaching the students of BS Computer Science of Riphah International University
+### Putting all concepts, related to Programming Fundamentals, here for the greater good.**
